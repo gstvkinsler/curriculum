@@ -21,6 +21,5 @@
         </style>
     </head>
     <body class="antialiased">
-        <h1>joao é gay</h1>
     </body>
 </html>
