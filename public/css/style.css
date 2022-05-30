@@ -1,0 +1,100 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-top: 0;
+    text-align: center;
+    background-color: rgba(7, 7, 7, 0.8); 
+    color: rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -1px 4px 15px -1px rgba(0,0,0,0.4); 
+    box-shadow: -1px 4px 15px -1px rgba(0,0,0,0.4);
+    font-family: Nunito, sans-serif;
+}
+
+.align{
+    text-align: center;
+    font-size:  35px;
+    margin-top: 10px;
+}
+
+.textNav{
+    color: white;
+    margin: left;
+}
+
+.logo{
+    width: 30px;
+    float: right;
+}
+
+.profileImg{
+    width: 150px;;
+    cursor: pointer;
+}
+
+nav{
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+    color: red;
+    
+}
+
+
+
+
+.containerImg{
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    display: table;
+    margin-top: 80px;
+}
+
+ .btnImg{
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    clip-path: circle(50% at 50% 50%) !important;
+    height: 40px;
+    margin-top:px;
+ }
+
+ .btnImg i{
+    margin-top: 5.5px;
+ }
+
+
+
+.container3{
+    margin: 0 auto;
+    width: 80%;
+    
+}
+
