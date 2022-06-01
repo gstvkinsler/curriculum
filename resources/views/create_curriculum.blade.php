@@ -15,12 +15,14 @@
 <body>
     <form class="container3" action="{{route('insert_curriculum')}}" method="POST">
         <div class="containerImg">
+            <div class="headerContainer">
+                <h1 class="align"">personal information.</h1>
+            </div>
             <img src="{{ asset('images/unknow.png') }} " class="profileImg" />
             <button type="button" class="btnImg btn btn-primary">
                 <i class="fa fa-camera"></i>
             </button>
         </div>
-        <h1 class="align"">personal information.</h1>
         <div class="s1 row">
             <div class=" col-sm-12 col-md-4">
                 <div class="">

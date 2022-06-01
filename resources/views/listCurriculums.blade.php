@@ -13,26 +13,34 @@
 </head>
 @include('navbar')
 <body>
-<table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Name</th>
-      <th scope="col">Birth date</th>
-      <th scope="col">Phone number</th>
-    </tr>
-  </thead>
-  <tbody>
+ <div class="section">   
+   <table class="table">
+     <thead class="thead-dark" style="border-radius: 30px;">
+      <tr>
+        <th scope="col" style="color: white">#</th>
+        <th scope="col" style="color: white">Name</th>
+        <th scope="col" style="color: white">Birth date</th>
+        <th scope="col" style="color: white">Phone number</th>
+        <th scope="col" style="color: white">Options</th>
+      </tr>
+    </thead>
+    <tbody>
       @foreach ($curriculums as $curriculum)
-    <tr>
-      <th scope="row">{{$curriculum->id}}</th>
-      <td>{{$curriculum->name}}</td>
-      <td>{{$curriculum->birth_date}}</td>
-      <td>{{$curriculum->phone_number}}</td>
-    </tr>
+      <tr>
+        <th scope="row" >{{$curriculum->id}}</th>
+        <td>{{$curriculum->name}}</td>
+        <td>{{$curriculum->birth_date}}</td>
+        <td>{{$curriculum->phone_number}}</td>
+        <td>
+          <button class="listBtn fa fa-eye" type="button"></button>
+          <button class="heartBtn listBtn fa fa-heart" type="button" style="margin-left: 5px"></button>
+          <button class="listBtn fa fa-trash" type="button"></button>
+        </td>
+      </tr>
       @endforeach
-  </tbody>
-</table>
-<a href="{{route('create_curriculum')}}" >Create</a>
+    </tbody>
+  </table>
+  <a href="{{route('create_curriculum')}}" >Create</a>
+</div> 
 </body>
 </html>
